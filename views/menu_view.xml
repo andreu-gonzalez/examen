@@ -1,0 +1,8 @@
+<odoo>
+    <data>
+        <menuitem name="empresa" id="empresa.menu_root" />
+        <menuitem name="" id="empresa.menu_socios" parent="empresa.menu_root" action="empresa.action_window_socios" />
+        <menuitem name="" id="empresa.menu_productos" parent="empresa.menu_root" action="empresa.action_window_productos" />
+        <menuitem name="" id="empresa.menu_camp" parent="empresa.menu_root" action="empresa.action_window_camp" />
+    </data>
+</odoo>

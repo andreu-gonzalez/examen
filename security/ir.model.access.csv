@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_empresa_socios,empresa.socios,model_empresa_socios,,1,1,1,1
+access_empresa_productos,empresa.productos,model_empresa_productos,,1,1,1,1
+access_empresa_camp,empresa.camp,model_empresa_camp,,1,1,1,1

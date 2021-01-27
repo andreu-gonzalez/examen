@@ -1,0 +1,93 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="empresa.listado_socios_form">
+      <field name="name">Formulario de socios</field>
+      <field name="model">empresa.socios</field>
+      <field name="arch" type="xml">
+        <form string="Nueva Tarea">
+          <sheet>
+           
+            
+             
+              <group string="Datos socio">
+          
+                
+              
+                <field name="name"/>
+                <field name="soci_id"/>
+                <field name="dni"/>
+                <field name="apellidos"/>
+                <field name="foto"/>
+                <field name="telf" />
+                <field name="email"/>
+                <field name="saldo"/>
+                <field name="fecha"/>
+                <field name="facturas"/>
+               </group> 
+         
+          
+          
+          </sheet>
+          <footer>
+            
+          </footer>
+        </form>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="empresa.listado_socios_tree">
+      <field name="name">Listado de socios</field>
+      <field name="model">empresa.socios</field>
+      <field name="arch" type="xml">
+        <tree>
+ 
+                      
+                <field name="name"/>
+                <field name="soci_id"/>
+                <field name="dni"/>
+                <field name="apellidos"/>
+                <field name="foto"/>
+                <field name="telf" />
+                <field name="email"/>
+                <field name="saldo"/>
+                <field name="fecha"/>
+     
+             
+         
+        </tree>
+      </field>
+    </record>
+
+
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="empresa.action_window_socios">
+      <field name="name">Listado de socios</field>
+      <field name="res_model">empresa.socios</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="tareas_app.action_server">
+      <field name="name">tareas_app server</field>
+      <field name="model_id" ref="model_tareas_app_tareas_app"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+
+<!--
+    <menuitem name="Server to list" id="tareas_app" parent="tareas_app.menu_2"
+              action="tareas_app.action_server"/>
+-->
+  </data>
+</odoo>
